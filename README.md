@@ -55,8 +55,8 @@ base-data-science/         # Root directory
 - Guidelines for setting up the project environment and dependencies.
   
 ### Prerequisites
-- [Python 3.11] (https://www.python.org/downloads/release/python-3110/)
-- [Docker] (https://www.docker.com/)
+[Python 3.11] (https://www.python.org/downloads/release/python-3110/)
+[Docker] (https://www.docker.com/)
 
 ### Environment Setup
 Set up your Python environment and install dependencies using `pipenv install` to create a virtual environment and install dependencies from the Pipfile.
