@@ -79,25 +79,19 @@ pipenv install
 
 - The .bitbucket/workflows/validate.yaml file configures Bitbucket Pipelines to check the Python code after every pushed commit. The commands specified in this file are also used for local code validation. Modify the pyproject.toml file to adjust commands and rules.
 
-- Linting: pipenv run pylint src/ tests/ main.py
-- Check Formatting: pipenv run black --line-length 120 --check .
-- Formatting: pipenv run black --line-length 120 .
-- Typing: pipenv run mypy --strict
-- Testing:
-    - pipenv run python main.py
-    - pipenv run pytest -v -s
-
 - Setup Pipenv: This step installs Pipenv and syncs dependencies, ensuring that the subsequent steps have the required environment set up properly.
 
-- Linting: Using pylint to perform static code analysis and identify potential issues in the codebase. This helps maintain code quality and adherence to coding standards.
+- Linting: Using pylint to perform static code analysis and identify potential issues in the codebase. This helps maintain code quality and adherence to coding standards. 'pipenv run pylint src/ tests/ main.py'
 
-- Formatting: Checking code formatting using Black ensures consistency in code style across the project. The --check option verifies whether the code complies with formatting standards without modifying the files.
+- Formatting: Checking code formatting using Black ensures consistency in code style across the project. The --check option verifies whether the code complies with formatting standards without modifying the files. 'pipenv run black --line-length 120 --check .'
 
-- Reformatting: If the code fails the formatting check, the black command without the --check option is executed to automatically reformat the code according to Black's standards. This ensures that the code is consistently formatted.
+- Reformatting: If the code fails the formatting check, the black command without the --check option is executed to automatically reformat the code according to Black's standards. This ensures that the code is consistently formatted. 'pipenv run black --line-length 120 .'
 
-- Type Checking: Running mypy with the --strict option enforces strict type checking, helping catch potential type-related errors in the codebase.
+- Type Checking: Running mypy with the --strict option enforces strict type checking, helping catch potential type-related errors in the codebase. 'pipenv run mypy --strict'
 
-- Tests: This step initiates any required services using Docker (if applicable) and then runs tests using pytest. The pytest command generates detailed test reports in JUnit XML format and coverage reports in XML format, which can be useful for analyzing test results and code coverage.
+- Tests: This step initiates any required services using Docker (if applicable) and then runs tests using pytest. The pytest command generates detailed test reports in JUnit XML format and coverage reports in XML format, which can be useful for analyzing test results and code coverage.ü
+- 'pipenv run python main.py'
+- 'pipenv run pytest -v -s'
 
 
 ## Main Steps
