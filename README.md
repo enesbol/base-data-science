@@ -112,6 +112,6 @@ Contributions to this repository are welcome! If you have suggestions for improv
 This project is licensed under the terms of the [MIT License](LICENSE).
 
 ## Contact
-For any inquiries or feedback, please contact [Enes Bol](enes2277@gmail.com).
+For any inquiries or feedback, please contact [Enes Bol] enes2277@gmail.com
 
 Happy forking and starting on your project!
