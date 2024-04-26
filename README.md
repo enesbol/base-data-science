@@ -19,8 +19,11 @@ The purpose of this repository is to streamline the development and collaboratio
 # Project Structure
 
 ```
-base-data-science/           # Root directory
+base-data-science/         # Root directory
 │
+├── .bitbucket/            # Directory for Bitbucket-specific configuration
+│   └── workflows/         # Directory for Bitbucket Pipelines workflows
+│       └── validate.yaml  # Configuration file for validating Bitbucket Pipelines
 ├── config/                # Directory for project configuration files
 │   ├── .conf              # Configuration file
 │   ├── .env               # Environment variable file
@@ -43,12 +46,8 @@ base-data-science/           # Root directory
 ├── pyproject.toml         # Configuration file for Python projects
 ├── README.md              # Documentation providing an overview of the repository and instructions for usage
 ├── config.py              # Configuration script
-├── directory_structure.txt # File detailing the directory structure (not included in final structure)
 ├── error.log              # Log file (not included in final structure)
 └── main.py                # Main Python script (not included in final structure)
-├── .bitbucket/            # Directory for Bitbucket-specific configuration
-│   └── workflows/         # Directory for Bitbucket Pipelines workflows
-│       └── validate.yaml  # Configuration file for validating Bitbucket Pipelines
 ```
 
 
