@@ -1,8 +1,8 @@
 # Python Data Science Project Repository
-Welcome to the Python Data Science Project Repository! This repository serves as a template and starting point for data science projects implemented in Python. Whether you're forking this repository to start a new project or contributing to an existing one, it provides a structured framework to organize your work.
+This repository serves as a template and starting point for data science projects implemented in Python. Whether you're forking this repository to start a new project or contributing to an existing one, it provides a structured framework to organize your work.
 
 # Purpose
-The purpose of this repository is to streamline the development and collaboration process for Python-based data science projects. It includes common directories, files, and configurations tailored to data science workflows, allowing you to focus on your analysis and modeling tasks without worrying about project setup.
+The purpose of this repository is to streamline the development and collaboration process for data science projects. It includes common directories, files, and configurations tailored to data science workflows, allowing you to focus on your analysis and modeling tasks without worrying about project setup.
 
 
 # Table of Contents
