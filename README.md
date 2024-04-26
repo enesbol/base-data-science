@@ -19,7 +19,7 @@ The purpose of this repository is to streamline the development and collaboratio
 # Project Structure
 
 ```
-base_repository/           # Root directory
+base-data-science/           # Root directory
 │
 ├── config/                # Directory for project configuration files
 │   ├── .conf              # Configuration file
@@ -52,7 +52,7 @@ base_repository/           # Root directory
 ```
 
 
-## Setup Instructions : 
+# Setup Instructions : 
 - Guidelines for setting up the project environment and dependencies.
   
 - ### Prerequisites
