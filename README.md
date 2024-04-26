@@ -55,20 +55,22 @@ base-data-science/           # Root directory
 # Setup Instructions : 
 - Guidelines for setting up the project environment and dependencies.
   
-- ### Prerequisites
+### Prerequisites
 - Python 3.11 (https://www.python.org/downloads/release/python-3110/)
 - Docker (https://www.docker.com/)
 
-- ### Environment Setup
+### Environment Setup
 Set up your Python environment and install dependencies using `pipenv install` to create a virtual environment and install dependencies from the Pipfile.
 
-- #### Step 1: Install pipenv
+#### Step 1: Install pipenv
+
 If you haven't already installed pipenv, you can do so by running:
 ```sh
 pip install pipenv
 ```
 
-- #### Step 2: Install Dependencies
+#### Step 2: Install Dependencies
+
 Once pipenv is installed, create a virtual environment and install dependencies from the Pipfile:
 ```sh
 pipenv install
