@@ -16,8 +16,9 @@ The purpose of this repository is to streamline the development and collaboratio
 6. [Contact](#contact)
 
 
-# 1. Project Structure
+# Project Structure
 
+```
 base_repository/           # Root directory
 │
 ├── config/                # Directory for project configuration files
@@ -48,14 +49,33 @@ base_repository/           # Root directory
 ├── .bitbucket/            # Directory for Bitbucket-specific configuration
 │   └── workflows/         # Directory for Bitbucket Pipelines workflows
 │       └── validate.yaml  # Configuration file for validating Bitbucket Pipelines
+```
 
 
+## Setup Instructions : 
+- Guidelines for setting up the project environment and dependencies.
+  
+- ### Prerequisites
+- Python 3.11 (https://www.python.org/downloads/release/python-3110/)
+- Docker (https://www.docker.com/)
 
-## 2. Setup Environment: Set up your Python environment and install dependencies using `pipenv install` to create a virtual environment and install dependencies from the Pipfile.
+- ### Environment Setup
+Set up your Python environment and install dependencies using `pipenv install` to create a virtual environment and install dependencies from the Pipfile.
+
+- #### Step 1: Install pipenv
+If you haven't already installed pipenv, you can do so by running:
+```sh
+pip install pipenv
+```
+
+- #### Step 2: Install Dependencies
+Once pipenv is installed, create a virtual environment and install dependencies from the Pipfile:
+```sh
+pipenv install
+```
 
 
-
-## 3. Workflow
+## Workflow
 
 - The .bitbucket/workflows/validate.yaml file configures Bitbucket Pipelines to check the Python code after every pushed commit. The commands specified in this file are also used for local code validation. Modify the pyproject.toml file to adjust commands and rules.
 
@@ -80,7 +100,7 @@ base_repository/           # Root directory
 - Tests: This step initiates any required services using Docker (if applicable) and then runs tests using pytest. The pytest command generates detailed test reports in JUnit XML format and coverage reports in XML format, which can be useful for analyzing test results and code coverage.
 
 
-## 4. Main Steps
+## Main Steps
 1. **Fork and Clone the Repository**: Fork this repository to start a new project or clone it to your local machine using `git clone`.
 
 2. **Develop Code**: Develop your data preprocessing, modeling, and evaluation code in the `src/` directory.
