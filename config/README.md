@@ -1,0 +1,1 @@
+Directory for configuration files specific to your project, such as .env for environment variables or .conf for project configuration.

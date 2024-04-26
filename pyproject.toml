@@ -1,0 +1,9 @@
+[tool.mypy]
+files = "src, notebooks, tests, main.py "
+
+[tool.pylint.'MESSAGES CONTROL']
+max-line-length = 120
+
+[tool.pytest.ini_options]
+addopts = ["--cov=src/"]
+testpaths = "tests/"

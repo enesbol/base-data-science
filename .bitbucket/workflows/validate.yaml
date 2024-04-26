@@ -1,0 +1,39 @@
+image: python:3.11
+
+pipelines:
+  default:
+    - step:
+        name: Setup Pipenv
+        caches:
+          - pip
+        script:
+          - pip install pipenv
+          - pipenv sync
+
+    - step:
+        name: Linting
+        script:
+          - pipenv run pylint dashboard/ tests/ core/ main.py
+
+    - step:
+        name: Formatting
+        script:
+          - pipenv run black --line-length 120 --check .
+    
+    - step:
+        name: Reformatting
+        script:
+          - pipenv run black --line-length 120 .
+
+    - step:
+        name: Type Checking
+        script:
+          - pipenv run mypy --strict
+
+    - step:
+        name: Tests
+        services:
+          - docker
+        script:
+          - pipenv run python main.py init-db
+          - pipenv run pytest -v -s --junitxml=test-results.xml --cov-report=xml

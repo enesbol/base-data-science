@@ -1,0 +1,156 @@
+# Python cache files
+__pycache__/
+*.pyc
+
+# Pipenv
+Pipfile.lock
+
+# Virtual environment
+/.venv/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Python logs
+*.log
+
+# Ignore data files (if they are large or sensitive)
+/data 
+# Add any data types if you want to specifically ignore.
+/data/*.xlsx
+/data/*.json
+
+# Ignore models (if they are large or sensitive)
+/models 
+
+# Ignore any sensitive files or credentials
+.env
+
+# Ignore any build artifacts or compiled code
+/build/
+/dist/
+*.egg-info/
+*.egg/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore any temporary or backup files
+*.bak
+*.swp
+*~
+
+# Ignore system-specific files
+.DS_Store
+
+# Byte-compiled / optimized / DLL files
+_pycache_/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+cover/
+test-results.xml
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+_pypackages_/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+ 
+# Cython debug symbols
+cython_debug/
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/launch.json
+
+# Error logging
+error.log
+

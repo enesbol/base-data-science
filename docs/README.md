@@ -1,0 +1,1 @@
+Directory for additional project documentation, such as reports, presentations, or research papers.
