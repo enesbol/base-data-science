@@ -1,19 +1,22 @@
 # Python Data Science Project Repository
 Welcome to the Python Data Science Project Repository! This repository serves as a template and starting point for data science projects implemented in Python. Whether you're forking this repository to start a new project or contributing to an existing one, it provides a structured framework to organize your work.
 
-## Purpose
+# Purpose
 The purpose of this repository is to streamline the development and collaboration process for Python-based data science projects. It includes common directories, files, and configurations tailored to data science workflows, allowing you to focus on your analysis and modeling tasks without worrying about project setup.
 
- 
+
 # Table of Contents
 1. [Project Structure](#project-structure)
 2. [Setup Instructions](#setup-instructions)
    - [Prerequisites](#prerequisites)
    - [Environment Setup](#environment-setup)
+3. [Workflow](#workflow)
+4. [Main Steps](#main-steps)
+5. [Contribution Guidelines](#contribution-guidelines)
+6. [Contact](#contact)
 
-4. [Output](#output)
 
-## Project Structure
+# 1. Project Structure
 
 base_repository/           # Root directory
 │
@@ -48,44 +51,45 @@ base_repository/           # Root directory
 
 
 
-2. **Setup Environment**: Set up your Python environment and install dependencies using `pipenv install` to create a virtual environment and install dependencies from the Pipfile.
+## 2. Setup Environment: Set up your Python environment and install dependencies using `pipenv install` to create a virtual environment and install dependencies from the Pipfile.
 
-The .bitbucket/workflows/validate.yaml file configures Bitbucket Pipelines to check the Python code after every pushed commit. The commands specified in this file are also used for local code validation.
+
+
+## 3. Workflow
+
+- The .bitbucket/workflows/validate.yaml file configures Bitbucket Pipelines to check the Python code after every pushed commit. The commands specified in this file are also used for local code validation. Modify the pyproject.toml file to adjust commands and rules.
 
 - Linting: pipenv run pylint src/ tests/ main.py
 - Check Formatting: pipenv run black --line-length 120 --check .
 - Formatting: pipenv run black --line-length 120 .
 - Typing: pipenv run mypy --strict
 - Testing:
-  - 
-    pipenv run python main.py
-    pipenv run pytest -v -s
-Modify the pyproject.toml file to adjust commands and rules.
+    - pipenv run python main.py
+    - pipenv run pytest -v -s
+
+- Setup Pipenv: This step installs Pipenv and syncs dependencies, ensuring that the subsequent steps have the required environment set up properly.
+
+- Linting: Using pylint to perform static code analysis and identify potential issues in the codebase. This helps maintain code quality and adherence to coding standards.
+
+- Formatting: Checking code formatting using Black ensures consistency in code style across the project. The --check option verifies whether the code complies with formatting standards without modifying the files.
+
+- Reformatting: If the code fails the formatting check, the black command without the --check option is executed to automatically reformat the code according to Black's standards. This ensures that the code is consistently formatted.
+
+- Type Checking: Running mypy with the --strict option enforces strict type checking, helping catch potential type-related errors in the codebase.
+
+- Tests: This step initiates any required services using Docker (if applicable) and then runs tests using pytest. The pytest command generates detailed test reports in JUnit XML format and coverage reports in XML format, which can be useful for analyzing test results and code coverage.
 
 
-
-Setup Pipenv: This step installs Pipenv and syncs dependencies, ensuring that the subsequent steps have the required environment set up properly.
-Linting: Using pylint to perform static code analysis and identify potential issues in the codebase. This helps maintain code quality and adherence to coding standards.
-Formatting: Checking code formatting using Black ensures consistency in code style across the project. The --check option verifies whether the code complies with formatting standards without modifying the files.
-Reformatting: If the code fails the formatting check, the black command without the --check option is executed to automatically reformat the code according to Black's standards. This ensures that the code is consistently formatted.
-Type Checking: Running mypy with the --strict option enforces strict type checking, helping catch potential type-related errors in the codebase.
-Tests: This step initiates any required services using Docker (if applicable) and then runs tests using pytest. The pytest command generates detailed test reports in JUnit XML format and coverage reports in XML format, which can be useful for analyzing test results and code coverage.
-
-
-## Getting Started
+## 4. Main Steps
 1. **Fork and Clone the Repository**: Fork this repository to start a new project or clone it to your local machine using `git clone`.
 
+2. **Develop Code**: Develop your data preprocessing, modeling, and evaluation code in the `src/` directory.
 
+3. **Run Tests**: Ensure code functionality by running tests located in the `tests/` directory.
 
-3. **Explore Data**: Explore and analyze your data using Jupyter notebooks located in the `notebooks/` directory.
+4. **Configure CI/CD**: Customize the `bitbucket-pipelines.yml` file to define your CI/CD workflow for automated testing and deployment.
 
-4. **Develop Code**: Develop your data preprocessing, modeling, and evaluation code in the `src/` directory.
-
-5. **Run Tests**: Ensure code functionality by running tests located in the `tests/` directory.
-
-6. **Configure CI/CD**: Customize the `bitbucket-pipelines.yml` file to define your CI/CD workflow for automated testing and deployment.
-
-7. **Documentation**: Update the README.md file with project-specific information and usage instructions.
+5. **Documentation**: Update the README.md file with project-specific information and usage instructions.
 
 ## Contribution Guidelines
 Contributions to this repository are welcome! If you have suggestions for improvements or new features, feel free to open an issue or submit a pull request.
