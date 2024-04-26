@@ -15,13 +15,13 @@ Pipfile.lock
 *.log
 
 # Ignore data files (if they are large or sensitive)
-/data 
 # Add any data types if you want to specifically ignore.
+/data/*.csv
 /data/*.xlsx
 /data/*.json
 
 # Ignore models (if they are large or sensitive)
-/models 
+/models/*.pkl
 
 # Ignore any sensitive files or credentials
 .env
