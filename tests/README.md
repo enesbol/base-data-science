@@ -5,11 +5,11 @@ Directory for unit tests and integration tests to ensure code functionality.
 
 **Unit Tests**: Test individual functions or methods in your data processing pipeline to ensure they work as expected.
 
-- Data Quality Tests: Test the quality of your data, including checks for missing values, outliers, and data consistency & data governance.
+- **Data Quality Tests**: Test the quality of your data, including checks for missing values, outliers, and data consistency & data governance.
 
-- Model Training & Eval Tests: Validate the training process and evaluation metrics of your models.
+- **Model Training & Eval Tests**: Validate the training process and evaluation metrics of your models.
 
-- Model Deployment Tests: Test the deployment process of your app.
+- **Model Deployment Tests**: Test the deployment process of your app.
     
 **Acceptance Tests**: Verify that the software meets the user's requirements and is ready for release. 
 
