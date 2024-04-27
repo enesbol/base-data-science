@@ -50,9 +50,6 @@ jobs:
         run: pipenv run mypy --strict
   tests:
     runs-on: ubuntu-latest
-    services:
-      docker:
-        - name: docker
     steps:
       - uses: actions/checkout@v2
       - name: Set up Python
