@@ -50,7 +50,6 @@ base-data-science/         # Root directory
 └── main.py                # Main Python script (not included in final structure)
 ```
 
-
 # Setup Instructions : 
 - Guidelines for setting up the project environment and dependencies.
   
@@ -102,7 +101,7 @@ pipenv install
 
 3. **Run Tests**: Ensure code functionality by running tests located in the `tests/` directory.
 
-4. **Configure CI/CD**: Customize the `bitbucket-pipelines.yml` file to define your CI/CD workflow for automated testing and deployment.
+4. **Configure CI/CD**: Customize the `validate.yml` file to define your CI/CD workflow for automated testing and deployment.
 
 5. **Documentation**: Update the README.md file with project-specific information and usage instructions.
 
