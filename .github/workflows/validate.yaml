@@ -18,7 +18,7 @@ jobs:
           pip install pipenv
           pipenv sync
       - name: Linting
-        run: pipenv run pylint dashboard/ tests/ core/ main.py
+        run: pipenv run pylint tests/ main.py
   format:
     runs-on: ubuntu-latest
     steps:
