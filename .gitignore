@@ -2,9 +2,6 @@
 __pycache__/
 *.pyc
 
-# Pipenv
-Pipfile.lock
-
 # Virtual environment
 /.venv/
 
