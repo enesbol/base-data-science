@@ -53,9 +53,6 @@ jobs:
 
   tests:
     runs-on: ubuntu-latest
-    services:
-      docker:
-        - name: docker
     steps:
       - uses: actions/checkout@v2
       - name: Set up Python
@@ -71,3 +68,6 @@ jobs:
         run: pipenv run python main.py init-db
       - name: Run tests
         run: pipenv run pytest -v -s --junitxml=test-results.xml --cov-report=xml
+    services:
+      docker:
+        - name: docker
