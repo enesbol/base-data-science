@@ -54,11 +54,19 @@ base-data-science/         # Root directory
 - Guidelines for setting up the project environment and dependencies.
   
 ### Prerequisites
-- [Python 3.11](https://www.python.org/downloads/release/python-3110/)
+- [Python 3.12.3](https://www.python.org/downloads/release/python-3123/)
 - [Docker](https://www.docker.com/)
 
 ### Environment Setup
-Set up your Python environment and install dependencies using `pipenv install` to create a virtual environment and install dependencies from the Pipfile.
+
+- Set up your Python environment and install dependencies using `pipenv install` to create a virtual environment and install dependencies from the Pipfile.
+
+- Pipenv is a package and dependency manager for Python projects. It harnesses the power of different existing tools, bringing their functionalities together:
+
+- **pip** for Python package management
+- **pyenv** for Python version management
+- **Virtualenv** for creating different virtual Python environments
+- **Pipfile** for managing project dependencies
 
 #### Step 1: Install pipenv
 
